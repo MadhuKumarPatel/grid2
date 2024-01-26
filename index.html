@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .md{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+        }
+        .main{
+            height: 600px;
+            width: 800px;
+            margin-left: 300px;
+            position: absolute;
+            top: 80px;
+            display: grid;
+            grid-template-columns: repeat(6, 150px);
+            grid-template-rows: repeat(5, 100px);
+            gap: 10px;
+        }
+        .box1{
+            background-color: red;
+            grid-row: 1 / 3;
+            grid-column: 1 / 2;           
+        }
+        .box2{
+            background-color: aqua;
+            grid-row: 1 / 2;
+            grid-column: 2 / 4 ;
+        }
+        .box3{
+            background-color: burlywood;
+            grid-row: 1/2 ;
+            grid-column: 4/7;
+        }
+        .box4{
+            background-color: white;
+            grid-row: 3/5 ;
+            grid-column: 1/2;
+        }
+        .box5{
+            background-color:  burlywood;
+           grid-row: 2/4;
+           grid-column:2/3 ;
+        }
+        .box6{
+            background-color: white;
+            grid-row: 2/4;
+            grid-column: 3/6;
+        }
+        .box7{
+            background-color: red;
+            grid-row: 2/5;
+            grid-column: 6/7;
+        }
+        .box8{
+            background-color: red;
+            grid-row: 4/5;
+            grid-column:2/5 ;
+        }
+        .box9{
+            background-color: aqua;
+            grid-row: 4/5;
+            grid-column:5/6 ;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="md">
+        <div class="main">
+            <div class="box1">1</div>
+            <div class="box2" >2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+            <div class="box5">5</div>
+            <div class="box6">6</div>
+            <div class="box7">7</div>
+            <div class="box8">8</div>
+            <div class="box9">9</div>
+        </div>
+    </div>
+</body>
+</html>
